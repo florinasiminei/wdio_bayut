@@ -2,9 +2,8 @@ const {
     executeHooksWithArgs
 } = require("@wdio/sync");
 
-describe('Bayut product search', () => {
-    //  TODO: Fix testcase text
-    it('Should open the mail url and verify the title', () => {
+describe('Bayut for rent popular searches', () => {
+    it('Should Validate links under "Dubai apartments" are functioning correctly (the search page is loaded correctly)', () => {
         browser.maximizeWindow()
         browser.url('https://www.bayut.com/');
 

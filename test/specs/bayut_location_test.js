@@ -4,12 +4,12 @@ describe('Bayut product search', () => {
         browser.url('https://www.bayut.com/');
         expect(browser).toHaveTitle("Bayut: UAE's Largest Real Estate Portal");
     });
-    it('Verify that all displayed properties contain the selected location', () => {
+    it('Should verify that all displayed properties contain the selected location', () => {
         const searchInput = $('._4610598b input');
         const searchSelect = $('._3eb9be10._9a03d150 li:nth-child(1) button');
         const searchButton = $('div._580fbeeb._8a6c9954 a');
         const purposeDropdown = $('._325092f0 .ef5cccac');
-        const selectPurpose = $('div:nth-child(1) > div .d92d11c7:nth-child(1) button');
+        const selectPurpose = $('div .d92d11c7:nth-child(1) button');
         searchInput.addValue('Dubai Marina');
         browser.pause(1000);
         searchSelect.click();
